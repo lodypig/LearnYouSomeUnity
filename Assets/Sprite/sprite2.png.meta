@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c9188f8f62fb38f48aa0b896b71e423b
-timeCreated: 1456219088
+guid: a4580ce03d3f11141b42dc48e94cb202
+timeCreated: 1463904160
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName: {}
@@ -51,7 +51,7 @@ TextureImporter:
   spriteSheet:
     sprites: []
     outline: []
-  spritePackingTag: UIArea
+  spritePackingTag: Altas
   userData: 
   assetBundleName: 
   assetBundleVariant: 
