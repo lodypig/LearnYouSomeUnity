@@ -16,7 +16,7 @@ public class LearnYouLoadAssetBundle : MonoBehaviour {
 #endif
 
     private AssetBundle LoadFromFile(string path) {
-        return AssetBundle.LoadFromFile(STREAMING_ASSET_PATH + "/sprite1234.ab");
+        return AssetBundle.LoadFromFile(STREAMING_ASSET_PATH + "/UI/Compress/sprite1234.ab");
     }
 
     private void CreateAsset(AssetBundle ab, string assetName) {
