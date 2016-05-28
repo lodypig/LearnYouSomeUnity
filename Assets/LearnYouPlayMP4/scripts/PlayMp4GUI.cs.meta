@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 2340550ee1cc0be45b9d87d98129611f
+timeCreated: 1464423489
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - movieTexture: {fileID: 15200000, guid: 68955b8bef202364a89a6c4353fe2d03, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
