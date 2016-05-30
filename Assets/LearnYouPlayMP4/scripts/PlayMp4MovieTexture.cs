@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PlayMp4MovieTexture : MonoBehaviour {
-
+	#if UNITY_EDITOR
     public MovieTexture movieTexture;
 	void Start () {
         this.GetComponent<Renderer>().material.mainTexture = movieTexture;
@@ -33,5 +33,5 @@ public class PlayMp4MovieTexture : MonoBehaviour {
             movieTexture.Stop();
         }
     }
-	
+	#endif
 }

@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class PlayMp4GUI : MonoBehaviour {
+	#if UNITY_EDITOR
     public MovieTexture movTexture;
 
     void Start()
@@ -37,5 +38,6 @@ public class PlayMp4GUI : MonoBehaviour {
             movTexture.Stop();
         }
     }
-	
+
+	#endif
 }
