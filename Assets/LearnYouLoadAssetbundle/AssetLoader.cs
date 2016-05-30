@@ -33,20 +33,28 @@ public class AssetLoader {
     #endregion
 
     #region load ab
-    public static AssetBundle LoadFromFile(string path)
+    public static AssetBundle LoadABFromStream(string path)
     {
         return AssetBundle.LoadFromFile(STREAMING_ASSET_PATH + path);
     }
 
-    public static void LoadFromWWW(string path, Action<AssetBundle> callback)
+    public static void LoadABFromStreamAsync(string path, Action<AssetBundle> callback)
     {
-        CoroutineProvider.Instance.StartCoroutine(LoadFromWWWCoroutine(path, callback));
+        CoroutineProvider.Instance.StartCoroutine(LoadFromWWWCoroutine(WWW_STREAM_ASSET_PATH + path, callback));
+    }
 
+    public static AssetBundle LoadABFromPersistent(string path)
+    {
+        return AssetBundle.LoadFromFile(Application.persistentDataPath + path);
+    }
+
+    public static void LoadABFromPersistentAsync(string path, Action<AssetBundle> callback) {
+        CoroutineProvider.Instance.StartCoroutine(LoadFromWWWCoroutine(Application.persistentDataPath + path, callback));
     }
 
     static IEnumerator LoadFromWWWCoroutine(string path, Action<AssetBundle> callback)
     {
-        WWW www = new WWW(WWW_STREAM_ASSET_PATH + path);
+        WWW www = new WWW(path);
         yield return www;
         callback(www.assetBundle);
         www.Dispose();
