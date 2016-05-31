@@ -21,16 +21,31 @@ public class AssetLoader {
     #region WWW_STREAM_ASSET_PATH
     public static readonly string WWW_STREAM_ASSET_PATH =
 #if UNITY_STANDALONE_WIN || UNITY_EDITOR
- "file://" + Application.streamingAssetsPath;
+    "file://" + Application.streamingAssetsPath;
 #elif UNITY_IPHONE
 	Application.dataPath + "/Raw";
 #elif UNITY_ANDROID
 	"jar:file://" + Application.dataPath + "!/assets";
 #else
+    string.Empty;
+#endif
+
+    #endregion
+
+    #region WWW_PERSISTENT_DATA_PATH
+    public static readonly string WWW_PERSISTENT_DATA_PATH =
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR
+ "file:///" + Application.persistentDataPath;
+#elif UNITY_IPHONE
+	Application.persistentDataPath;
+#elif UNITY_ANDROID
+	Application.persistentDataPath;
+#else
         string.Empty;
 #endif
 
     #endregion
+
 
     #region load ab
     public static AssetBundle LoadABFromStream(string path)
@@ -49,7 +64,7 @@ public class AssetLoader {
     }
 
     public static void LoadABFromPersistentAsync(string path, Action<AssetBundle> callback) {
-        CoroutineProvider.Instance.StartCoroutine(LoadFromWWWCoroutine(Application.persistentDataPath + path, callback));
+        CoroutineProvider.Instance.StartCoroutine(LoadFromWWWCoroutine(WWW_PERSISTENT_DATA_PATH + path, callback));
     }
 
     static IEnumerator LoadFromWWWCoroutine(string path, Action<AssetBundle> callback)

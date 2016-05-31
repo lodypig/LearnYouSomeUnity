@@ -34,7 +34,7 @@ public class AssetDataBase  {
                 sourceFile = Application.dataPath + unityPath.Replace("Assets", "");
                 toFile = Application.persistentDataPath + unityPath.Replace("Assets", "");
                 PathUtil.EnsureFolder(PathUtil.GetFolderPath(toFile));
-                FileUtil.MoveFileOrDirectory(sourceFile, toFile);
+                FileUtil.CopyFileOrDirectory(sourceFile, toFile);
             }
             AssetDatabase.Refresh();
         }

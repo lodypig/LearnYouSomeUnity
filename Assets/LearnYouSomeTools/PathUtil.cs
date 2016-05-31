@@ -49,7 +49,7 @@ public class PathUtil {
     public static void EnsureUnityFolder(string path) {
         EnsureFolder(Application.dataPath + path);
     }
-
+    
     // just like the name
     public static void EnsureFolder(string path)
     {

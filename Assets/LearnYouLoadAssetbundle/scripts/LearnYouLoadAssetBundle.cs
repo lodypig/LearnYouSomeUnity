@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using System.IO;
 using UnityEngine.UI;
 
 public class LearnYouLoadAssetBundle : MonoBehaviour
@@ -10,6 +11,13 @@ public class LearnYouLoadAssetBundle : MonoBehaviour
 
     private List<GameObject> createObjectList = new List<GameObject>();
     private AssetBundle ab;
+    private Text text;
+
+    void Start()
+    {
+        AssetBundleDownLoader.Download();
+        text = GameObject.Find("Canvas/Text").GetComponent<Text>();
+    }
 
     private void Instantiate(UnityEngine.Object asset) { 
         if (asset != null) {
@@ -22,7 +30,7 @@ public class LearnYouLoadAssetBundle : MonoBehaviour
     }
 
     private void SetTime(string type, float time) {
-        GameObject.Find("Canvas/Text").GetComponent<Text>().text = type + " cost time : " + time;
+       text.text = type + " cost time : " + time;
     }
 
     private void CreateAsset(AssetBundle ab, string assetName) {
@@ -38,19 +46,27 @@ public class LearnYouLoadAssetBundle : MonoBehaviour
         });
     }
 
-    private void checkAB() {
+
+
+    private void Clear() {
+        for (int i = 0; i < createObjectList.Count; ++i)
+        {
+            Destroy(createObjectList[i]);
+        }
+        createObjectList.Clear();
         if (ab != null)
         {
             ab.Unload(true);
             ab = null;
         }
+        text.text = string.Empty;
     }
 
     void OnGUI() {
 
         if (GUI.Button(new Rect(10, 10, 200, 50), "stream同步AB"))
         {
-            checkAB();
+            Clear();
             float time = Time.realtimeSinceStartup;
             ab = AssetLoader.LoadABFromStream("/UI/Compress/sprite1234.ab");
             SetTime("load ab from streamingAssetDataPath", Time.realtimeSinceStartup - time);
@@ -58,7 +74,7 @@ public class LearnYouLoadAssetBundle : MonoBehaviour
 
         if (GUI.Button(new Rect(10, 80, 200, 50), "stream异步AB"))
         {
-            checkAB();
+            Clear();
             float time = Time.realtimeSinceStartup;
             AssetLoader.LoadABFromStreamAsync("/UI/Compress/sprite1234.ab", (assetBundle) =>
             {
@@ -69,7 +85,7 @@ public class LearnYouLoadAssetBundle : MonoBehaviour
 
         if (GUI.Button(new Rect(10, 150, 200, 50), "persistent同步AB"))
         {
-            checkAB();
+            Clear();
             float time = Time.realtimeSinceStartup;
             ab = AssetLoader.LoadABFromPersistent("/UI/Compress/sprite1234.ab");
             SetTime("load ab from streamingAssetDataPath", Time.realtimeSinceStartup - time);
@@ -77,7 +93,7 @@ public class LearnYouLoadAssetBundle : MonoBehaviour
 
         if (GUI.Button(new Rect(10, 220, 200, 50), "persistent异步AB"))
         {
-            checkAB();
+            Clear();
             float time = Time.realtimeSinceStartup;
             AssetLoader.LoadABFromPersistentAsync("/UI/Compress/sprite1234.ab", (assetBundle) =>
             {
@@ -89,6 +105,10 @@ public class LearnYouLoadAssetBundle : MonoBehaviour
         //CreateAsset(ab, "sprite1234.prefab");
         if (GUI.Button(new Rect(220, 10, 200, 50), "同步加载资源"))
         {
+            if (ab == null) {
+                text.text = "请先加载AB";
+                return;
+            }
             float time = Time.realtimeSinceStartup;
             CreateAsset(ab, "sprite1234.prefab");
             SetTime("load asset sync", Time.realtimeSinceStartup - time);
@@ -96,6 +116,11 @@ public class LearnYouLoadAssetBundle : MonoBehaviour
 
         if (GUI.Button(new Rect(220, 80, 200, 50), "异步加载资源")) 
         {
+            if (ab == null)
+            {
+                text.text = "请先加载AB";
+                return;
+            }
             float time = Time.realtimeSinceStartup;
             CreateAssetAsync(ab, "sprite1234.prefab", () =>
             {
@@ -105,14 +130,7 @@ public class LearnYouLoadAssetBundle : MonoBehaviour
 
 
         if (GUI.Button(new Rect(600, 10, 120, 50), "清空场景")) {
-            for (int i = 0; i < createObjectList.Count; ++i) {
-                Destroy(createObjectList[i]);
-            }
-            createObjectList.Clear();
-            if (ab != null) {
-                ab.Unload(true);
-                ab = null;
-            }
+            Clear();
         }
     }
 }

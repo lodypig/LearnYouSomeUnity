@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class MonoTestUnityPath : MonoBehaviour
+public class LearnUnityPath : MonoBehaviour
 {
 
 	// Use this for initialization
