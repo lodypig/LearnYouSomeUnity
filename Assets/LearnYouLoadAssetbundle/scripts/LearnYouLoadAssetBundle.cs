@@ -15,8 +15,9 @@ public class LearnYouLoadAssetBundle : MonoBehaviour
 
     void Start()
     {
-        AssetBundleDownLoader.Download();
+        AssetBundleDownLoader.DownloadHttp("sprite1234.ab", "sprite1234.ab");
         text = GameObject.Find("Canvas/Text").GetComponent<Text>();
+        AssetLoader.LoadABFromStream("/UI/Compress/common.ab");
     }
 
     private void Instantiate(UnityEngine.Object asset) { 

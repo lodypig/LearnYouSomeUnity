@@ -55,7 +55,7 @@ public class AssetLoader {
 
     public static void LoadABFromStreamAsync(string path, Action<AssetBundle> callback)
     {
-        CoroutineProvider.Instance.StartCoroutine(LoadFromWWWCoroutine(WWW_STREAM_ASSET_PATH + path, callback));
+        CoroutineProvider.Instance.StartCoroutine(LoadFromFileCoroutine(STREAMING_ASSET_PATH + path, callback));
     }
 
     public static AssetBundle LoadABFromPersistent(string path)
@@ -64,7 +64,13 @@ public class AssetLoader {
     }
 
     public static void LoadABFromPersistentAsync(string path, Action<AssetBundle> callback) {
-        CoroutineProvider.Instance.StartCoroutine(LoadFromWWWCoroutine(WWW_PERSISTENT_DATA_PATH + path, callback));
+        CoroutineProvider.Instance.StartCoroutine(LoadFromFileCoroutine(Application.persistentDataPath + path, callback));
+    }
+
+    static IEnumerator LoadFromFileCoroutine(string path, Action<AssetBundle> callback) {
+        AssetBundleCreateRequest abcr = AssetBundle.LoadFromFileAsync(path);
+        yield return abcr;
+        callback(abcr.assetBundle);
     }
 
     static IEnumerator LoadFromWWWCoroutine(string path, Action<AssetBundle> callback)
