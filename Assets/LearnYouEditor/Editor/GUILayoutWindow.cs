@@ -10,6 +10,22 @@ public class GUILayoutWindow : EditorWindow {
     }
 
     void OnGUI() {
-        GUILayout.Box("I'm a box", GUILayout.Width(250), GUILayout.Height(180));
+        GUILayout.Button("Top", GUILayout.Height(80));
+        GUILayout.BeginArea(new Rect(10, 10, 300, 200));
+        GUILayout.Button("A");
+        GUILayout.BeginHorizontal("ttt", GUILayout.Width(290));
+        GUILayout.BeginVertical("ttttt", GUILayout.Width(250));
+        GUILayout.Button("B1");
+        GUILayout.Button("B2");
+        GUILayout.Button("B3");
+        GUILayout.Button("B4");
+        GUILayout.Button("B5");
+        GUILayout.EndVertical();
+        GUILayout.Button("D", GUILayout.Height(20));
+        GUILayout.EndHorizontal();
+        GUILayout.Button("C");
+        GUILayout.EndArea();
+        GUILayout.Button("Buttom");
+        
     }
 }
