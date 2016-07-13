@@ -1,0 +1,16 @@
+{
+    "group": "sysInfo",
+    "libs": [libz.dylib],
+    "frameworks": [
+                    "SystemConfiguration.framework"
+                  ],
+    "headerpaths": [],
+    "files":   [
+                "sysInfo/SysInfo.h",
+				"sysInfo/SysInfo.m"
+                ],
+    "folders": [],    
+    "excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$"],
+    "compiler_flags": [],
+    "linker_flags": ["-lz"]
+}

@@ -1,0 +1,17 @@
+{
+    "group": "editBox",
+    "libs": [libz.dylib],
+    "frameworks": [
+                    "SystemConfiguration.framework",
+                    "Security.framework"
+                  ],
+    "headerpaths": [],
+    "files":   [
+                "editBox/UICustomTextField.h",
+				"editBox/UICustomTextField.m"
+                ],
+    "folders": [],    
+    "excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$"],
+    "compiler_flags": [],
+    "linker_flags": ["-lz"]
+}
