@@ -71,6 +71,16 @@ public class PathUtil {
         return "Assets" + path;
     }
 
+    public static string Sys2UnityPath(string path) { 
+        path = path.Replace("\\", "/");
+        int index = path.IndexOf("Assets");
+        return path.Substring(index);
+    }
+
+    public static string Unity2SysPath(string path) {
+        return GetSysPath(path.Replace("Assets", ""));
+    }
+
     // get the asset's name by path
     public static string GetAssetName(string path)
     {
