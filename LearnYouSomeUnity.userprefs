@@ -1,6 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/LearnYouShowBattery/ShowBattery.cs">
+    <Files>
+      <File FileName="Assets/LearnYouShowBattery/ShowBattery.cs" Line="47" Column="2" />
+      <File FileName="Assets/XUPorter/XCMod.cs" Line="21" Column="4" />
+      <File FileName="Assets/XUPorter/PBX Editor/PBXObject.cs" Line="54" Column="10" />
+      <File FileName="Assets/XUPorter/XCProject.cs" Line="59" Column="51" />
+      <File FileName="Assets/XUPorter/PBX Editor/PBXFileReference.cs" Line="114" Column="4" />
+      <File FileName="Assets/XUPorter/PBX Editor/PBXParser.cs" Line="199" Column="3" />
+      <File FileName="Assets/XUPorter/XCBuildConfiguration.cs" Line="160" Column="6" />
+      <File FileName="Assets/XUPorter/XCPlist.cs" Line="59" Column="18" />
+      <File FileName="Assets/XUPorter/XCodePostProcess.cs" Line="27" Column="69" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
