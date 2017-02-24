@@ -1,0 +1,164 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/Atlas/CollectProcess/CollectProcess.tpsheet
+- Assets/Atlas/Common/Common.tpsheet
+- Assets/Atlas/Emote/Emote.tpsheet
+- Assets/Atlas/EquipFloat/EquipFloat.tpsheet
+- Assets/Atlas/HeadIcon/HeadIcon.tpsheet
+- Assets/Atlas/HeadText/HeadText.tpsheet
+- Assets/Atlas/levelUp/levelUp.tpsheet
+- Assets/Atlas/Login/Login.tpsheet
+- Assets/Atlas/MainUI/MainUI.tpsheet
+- Assets/Atlas/OfflineReward/OfflineReward.tpsheet
+- Assets/Atlas/Rebirth/Rebirth.tpsheet
+- Assets/Atlas/SkillIcon/SkillIcon.tpsheet
+- Assets/Atlas/skillZhuanjin/skillZhuanjin.tpsheet
+- Assets/Atlas/Slot/Slot.tpsheet
+- Assets/Atlas/SysLayer/SysLayer.tpsheet
+- Assets/Atlas/TalentIcon/TalentIcon.tpsheet
+- Assets/Atlas/TaskAccept/TaskAccept.tpsheet
+- Assets/Atlas/TaskTalk/TaskTalk.tpsheet
+- Assets/Atlas/UIActivity/UIActivity.tpsheet
+- Assets/Atlas/UIAreaMap/UIAreaMap.tpsheet
+- Assets/Atlas/UIAuction/UIAuction.tpsheet
+- Assets/Atlas/UIBoss/UIBoss.tpsheet
+- Assets/Atlas/UIBossReward/UIBossReward.tpsheet
+- Assets/Atlas/UIChat/UIChat.tpsheet
+- Assets/Atlas/UIFuben/UIFuben.tpsheet
+- Assets/Atlas/UIFubenAutoTeam/UIFubenAutoTeam.tpsheet
+- Assets/Atlas/UIFubenZhunBei/UIFubenZhunBei.tpsheet
+- Assets/Atlas/UIGuide/UIGuide.tpsheet
+- Assets/Atlas/UIGuideMsg/UIGuideMsg.tpsheet
+- Assets/Atlas/UIHolyProtect/UIHolyProtect.tpsheet
+- Assets/Atlas/UIHorse/UIHorse.tpsheet
+- Assets/Atlas/UIKeyBorad/UIKeyBorad.tpsheet
+- Assets/Atlas/UILegion/UILegion.tpsheet
+- Assets/Atlas/UIMenu/UIMenu.tpsheet
+- Assets/Atlas/UIMolongTask/UIMolongTask.tpsheet
+- Assets/Atlas/UIMuscle/UIMuscle.tpsheet
+- Assets/Atlas/UIRankingList/UIRankingList.tpsheet
+- Assets/Atlas/UIRechargeJifen/UIRechargeJifen.tpsheet
+- Assets/Atlas/UIRechargeMuscle/UIRechargeMuscle.tpsheet
+- Assets/Atlas/UIRewardTask/UIRewardTask.tpsheet
+- Assets/Atlas/UIRole/UIRole.tpsheet
+- Assets/Atlas/UISetting/UISetting.tpsheet
+- Assets/Atlas/UISkillNew/UISkillNew.tpsheet
+- Assets/Atlas/UISuit/UISuit.tpsheet
+- Assets/Atlas/UITalent/UITalent.tpsheet
+- Assets/Atlas/UITeam/UITeam.tpsheet
+- Assets/Atlas/UITeamActivity/UITeamActivity.tpsheet
+- Assets/Atlas/UITeamSub/UITeamSub.tpsheet
+- Assets/Atlas/UIWorkShopNew/UIWorkShopNew.tpsheet
+- Assets/Atlas/UIXilianZhuanyi/UIXilianZhuanyi.tpsheet
+- Assets/Atlas/UpEquipment/UpEquipment.tpsheet
+- Assets/Atlas/zidongxunlu/zidongxunlu.tpsheet
+- Assets/Atlas/zidongzhandouzhong/zidongzhandouzhong.tpsheet
+textureFileNames:
+- Assets/Atlas/CollectProcess/CollectProcess.png
+- Assets/Atlas/Common/Common.png
+- Assets/Atlas/Emote/Emote.png
+- Assets/Atlas/EquipFloat/EquipFloat.png
+- Assets/Atlas/HeadIcon/HeadIcon.png
+- Assets/Atlas/HeadText/HeadText.png
+- Assets/Atlas/levelUp/levelUp.png
+- Assets/Atlas/Login/Login.png
+- Assets/Atlas/MainUI/MainUI.png
+- Assets/Atlas/OfflineReward/OfflineReward.png
+- Assets/Atlas/Rebirth/Rebirth.png
+- Assets/Atlas/SkillIcon/SkillIcon.png
+- Assets/Atlas/skillZhuanjin/skillZhuanjin.png
+- Assets/Atlas/Slot/Slot.png
+- Assets/Atlas/SysLayer/SysLayer.png
+- Assets/Atlas/TalentIcon/TalentIcon.png
+- Assets/Atlas/TaskAccept/TaskAccept.png
+- Assets/Atlas/TaskTalk/TaskTalk.png
+- Assets/Atlas/UIActivity/UIActivity.png
+- Assets/Atlas/UIAreaMap/UIAreaMap.png
+- Assets/Atlas/UIAuction/UIAuction.png
+- Assets/Atlas/UIBoss/UIBoss.png
+- Assets/Atlas/UIBossReward/UIBossReward.png
+- Assets/Atlas/UIChat/UIChat.png
+- Assets/Atlas/UIFuben/UIFuben.png
+- Assets/Atlas/UIFubenAutoTeam/UIFubenAutoTeam.png
+- Assets/Atlas/UIFubenZhunBei/UIFubenZhunBei.png
+- Assets/Atlas/UIGuide/UIGuide.png
+- Assets/Atlas/UIGuideMsg/UIGuideMsg.png
+- Assets/Atlas/UIHolyProtect/UIHolyProtect.png
+- Assets/Atlas/UIHorse/UIHorse.png
+- Assets/Atlas/UIKeyBorad/UIKeyBorad.png
+- Assets/Atlas/UILegion/UILegion.png
+- Assets/Atlas/UIMenu/UIMenu.png
+- Assets/Atlas/UIMolongTask/UIMolongTask.png
+- Assets/Atlas/UIMuscle/UIMuscle.png
+- Assets/Atlas/UIRankingList/UIRankingList.png
+- Assets/Atlas/UIRechargeJifen/UIRechargeJifen.png
+- Assets/Atlas/UIRechargeMuscle/UIRechargeMuscle.png
+- Assets/Atlas/UIRewardTask/UIRewardTask.png
+- Assets/Atlas/UIRole/UIRole.png
+- Assets/Atlas/UISetting/UISetting.png
+- Assets/Atlas/UISkillNew/UISkillNew.png
+- Assets/Atlas/UISuit/UISuit.png
+- Assets/Atlas/UITalent/UITalent.png
+- Assets/Atlas/UITeam/UITeam.png
+- Assets/Atlas/UITeamActivity/UITeamActivity.png
+- Assets/Atlas/UITeamSub/UITeamSub.png
+- Assets/Atlas/UIWorkShopNew/UIWorkShopNew.png
+- Assets/Atlas/UIXilianZhuanyi/UIXilianZhuanyi.png
+- Assets/Atlas/UpEquipment/UpEquipment.png
+- Assets/Atlas/zidongxunlu/zidongxunlu.png
+- Assets/Atlas/zidongzhandouzhong/zidongzhandouzhong.png
+normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
