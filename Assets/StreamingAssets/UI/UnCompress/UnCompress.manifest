@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: common.ab
+      Dependencies: {}
+    Info_1:
+      Name: image.ab
+      Dependencies: {}
+    Info_2:
+      Name: none.ab
+      Dependencies: {}
+    Info_3:
+      Name: sprite1.ab
+      Dependencies:
+        Dependency_0: common.ab
+    Info_4:
+      Name: sprite123.ab
+      Dependencies:
+        Dependency_0: common.ab
+    Info_5:
+      Name: sprite1234.ab
+      Dependencies:
+        Dependency_0: common.ab
+    Info_6:
+      Name: sprite2.ab
+      Dependencies:
+        Dependency_0: common.ab
+    Info_7:
+      Name: sprite234.ab
+      Dependencies:
+        Dependency_0: common.ab
+    Info_8:
+      Name: sprite3.ab
+      Dependencies:
+        Dependency_0: common.ab
+    Info_9:
+      Name: sprite4.ab
+      Dependencies:
+        Dependency_0: common.ab

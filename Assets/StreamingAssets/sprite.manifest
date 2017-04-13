@@ -1,0 +1,74 @@
+ManifestFileVersion: 0
+CRC: 2102008374
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9e40a761365ecfc7355ef45b3adafb27
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9dea23ffc7e96552740e12d1ee5309d8
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/BuildAssetbundle/Sprite/sprite52.png
+- Assets/BuildAssetbundle/Sprite/sprite47.png
+- Assets/BuildAssetbundle/Sprite/sprite15.png
+- Assets/BuildAssetbundle/Sprite/sprite13.png
+- Assets/BuildAssetbundle/Sprite/sprite2.png
+- Assets/BuildAssetbundle/Sprite/sprite42.png
+- Assets/BuildAssetbundle/Sprite/sprite43.png
+- Assets/BuildAssetbundle/Sprite/sprite55.png
+- Assets/BuildAssetbundle/Sprite/sprite48.png
+- Assets/BuildAssetbundle/Sprite/sprite14.png
+- Assets/BuildAssetbundle/Sprite/sprite49.png
+- Assets/BuildAssetbundle/Sprite/sprite22.png
+- Assets/BuildAssetbundle/Sprite/sprite53.png
+- Assets/BuildAssetbundle/Sprite/sprite18.png
+- Assets/BuildAssetbundle/Sprite/sprite30.png
+- Assets/BuildAssetbundle/Sprite/sprite35.png
+- Assets/BuildAssetbundle/Sprite/sprite1.png
+- Assets/BuildAssetbundle/Sprite/sprite56.png
+- Assets/BuildAssetbundle/Sprite/sprite24.png
+- Assets/BuildAssetbundle/Sprite/sprite38.png
+- Assets/BuildAssetbundle/Sprite/sprite40.png
+- Assets/BuildAssetbundle/Sprite/sprite39.png
+- Assets/BuildAssetbundle/Sprite/sprite12.png
+- Assets/BuildAssetbundle/Sprite/sprite44.png
+- Assets/BuildAssetbundle/Sprite/sprite45.png
+- Assets/BuildAssetbundle/Sprite/sprite21.png
+- Assets/BuildAssetbundle/Sprite/sprite37.png
+- Assets/BuildAssetbundle/Sprite/sprite16.png
+- Assets/BuildAssetbundle/Sprite/sprite5.png
+- Assets/BuildAssetbundle/Sprite/sprite29.png
+- Assets/BuildAssetbundle/Sprite/sprite23.png
+- Assets/BuildAssetbundle/Sprite/sprite54.png
+- Assets/BuildAssetbundle/Sprite/sprite31.png
+- Assets/BuildAssetbundle/Sprite/sprite57.png
+- Assets/BuildAssetbundle/Sprite/sprite34.png
+- Assets/BuildAssetbundle/Sprite/sprite10.png
+- Assets/BuildAssetbundle/Sprite/sprite8.png
+- Assets/BuildAssetbundle/Sprite/sprite46.png
+- Assets/BuildAssetbundle/Sprite/sprite26.png
+- Assets/BuildAssetbundle/Sprite/sprite25.png
+- Assets/BuildAssetbundle/Sprite/sprite27.png
+- Assets/BuildAssetbundle/Sprite/sprite50.png
+- Assets/BuildAssetbundle/Sprite/sprite17.png
+- Assets/BuildAssetbundle/Sprite/sprite20.png
+- Assets/BuildAssetbundle/Sprite/sprite28.png
+- Assets/BuildAssetbundle/Sprite/sprite51.png
+- Assets/BuildAssetbundle/Sprite/sprite6.png
+- Assets/BuildAssetbundle/Sprite/sprite7.png
+- Assets/BuildAssetbundle/Sprite/sprite9.png
+- Assets/BuildAssetbundle/Sprite/sprite41.png
+- Assets/BuildAssetbundle/Sprite/sprite19.png
+- Assets/BuildAssetbundle/Sprite/sprite33.png
+- Assets/BuildAssetbundle/Sprite/sprite11.png
+- Assets/BuildAssetbundle/Sprite/sprite32.png
+- Assets/BuildAssetbundle/Sprite/sprite3.png
+- Assets/BuildAssetbundle/Sprite/sprite4.png
+- Assets/BuildAssetbundle/Sprite/sprite36.png
+Dependencies: []

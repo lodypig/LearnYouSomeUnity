@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 4206455828
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b2d6310c219c502ed305372d0065d911
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9dea23ffc7e96552740e12d1ee5309d8
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/LearnYouBuildAssetbundle/Sprite/sprite2.png
+- Assets/LearnYouBuildAssetbundle/Sprite/sprite1.png
+- Assets/LearnYouBuildAssetbundle/Sprite/sprite3.png
+- Assets/LearnYouBuildAssetbundle/Sprite/sprite4.png
+Dependencies: []

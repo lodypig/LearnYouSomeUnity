@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2972561459
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cf953c1aa85b6a72db3ab2cac465764d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7698f067aba18f6587c7bb752f83f10e
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/MainUI/MainUI.tpsheet
+- Assets/MainUI/MainUI_a.png
+- Assets/MainUI/MainUI.png
+- Assets/MainUI/MainUI.mat
+- Assets/MainUI/UI-Default.shader
+Dependencies: []
